@@ -6,8 +6,8 @@ import {Swal} from 'sweetalert2';
 import app_config from "./config";
 
 const AddContact = () => {
-  const CLIENT_ID = "436370605107-a1a87949khjquees4o8m7cjeq3mpiu8b.apps.googleusercontent.com"
-  const API_KEY = "AIzaSyAzn3wRxPV_2kiXaRFkE480vDCEoiq1Nak"
+  const CLIENT_ID = "656938489269-18tf5ho2nf9dqrn49lqqk053kj9l5pmu.apps.googleusercontent.com"
+  const API_KEY = "AIzaSyD_kexdwJ2RQ3qwurLHVTSO2MniuagW_Jo"
   const url = app_config.api_url;
 
   const [contactsToAdd, setContactsToAdd] = useState([]);
