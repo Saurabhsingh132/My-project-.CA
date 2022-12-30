@@ -10,6 +10,7 @@ import SheetHandler from "./components/SheetHandler"
 import Authorisor from "./components/Authorisor"
 import Register from "./components/Register"
 import Login from "./components/Login"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route element={<SheetHandler />} path="handler" />
           <Route element={<Register />} path="register" />
           <Route element={<Login />} path="login" />
+          <Route element={<Footer/>} path="footer" />
+
         </Routes>
       </BrowserRouter>
     </div>

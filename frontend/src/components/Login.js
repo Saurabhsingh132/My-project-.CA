@@ -1,5 +1,6 @@
 import { Formik } from "formik"
 import React from "react"
+import { NavLink } from "react-router-dom"
 import Swal from "sweetalert2"
 
 const Login = () => {
@@ -53,6 +54,8 @@ const Login = () => {
                   <button type="submit" className="btn btn-primary">
                     Submit
                   </button>
+                  <h5><center>or</center></h5>
+                    <NavLink className='nav-link ' to="/signup" >Signup here</NavLink>
                 </form>
               )}
             </Formik>
