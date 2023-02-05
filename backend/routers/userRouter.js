@@ -60,7 +60,7 @@ router.get('/getbyid/:userid', (req, res) => {
     });
 
 });
-router.post('/authenticates',(req,res) => {
+router.post('/authenticate',(req,res) => {
     const formdata = req.body;
 
     Model.findOne(formdata)

@@ -1,9 +1,10 @@
 import { Formik } from "formik"
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 
 const Login = () => {
+  const navigate = useNavigate();
   const userSubmit = async (formdata) => {
     console.log(formdata);
 
@@ -19,6 +20,9 @@ const Login = () => {
         title : 'WellDone!!',
         text : 'Loggedin Successfully!!'
       })
+      const data = await res.json();
+      sessionStorage.setItem('user', JSON.stringify(data));
+      navigate('/ds');
     }else if(res.status === 401){
       Swal.fire({
         icon : 'error',
